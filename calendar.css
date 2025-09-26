@@ -1,0 +1,39 @@
+#calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.day-square {
+  border: 1px solid #ccc;
+  height: 80px;
+  position: relative;
+  cursor: pointer;
+  background: #fff;
+}
+
+.event-list {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+#detailed-view {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background: #f9f9f9;
+  border-left: 1px solid #ccc;
+  overflow-y: auto;
+  display: none; /* show when a day is clicked */
+}
+
+.event-block {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 20px;
+  border-radius: 4px;
+  background: #89CFF0; /* example color, use event color if available */
+}

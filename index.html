@@ -1,28 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Calendar Web App</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <title>Custom Google Calendar Viewer</title>
+  <link rel="stylesheet" href="calendar.css">
 </head>
 <body>
-  <div id="calendar-app">
-    <header>
-      <h1 id="month-year"></h1>
-    </header>
-    <table id="calendar">
-      <thead>
-        <tr id="weekday-row"></tr>
-      </thead>
-      <tbody id="calendar-body"></tbody>
-    </table>
-    <footer>
-      <button id="prev-month">Previous</button>
-      <button id="next-month">Next</button>
-    </footer>
-    <aside id="day-detail" class="hidden"></aside>
-  </div>
-  <script src="app.js"></script>
+  <div id="calendar-header"></div>
+  <div id="calendar-grid"></div>
+  <div id="calendar-navigation"></div>
+  <div id="detailed-view"></div>
+  <script src="calendar.js"></script>
 </body>
 </html>
