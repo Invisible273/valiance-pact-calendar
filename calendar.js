@@ -45,6 +45,7 @@ function changeMonth(delta) {
 }
 
 function loadCalendar(year, month) {
+  eventsCache = {}; // Clear all cached events
   document.getElementById('month-year').textContent = `${getMonthName(month)} ${year}`;
   fetchEvents(year, month).then(events => {
     renderCalendarGrid(year, month, events);
